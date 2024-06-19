@@ -1,0 +1,13 @@
+{
+  "name": "gz-firmware-script",
+  "description": "Automation script for firmware development",
+  "authors": "quang.nguyen@goalzero.com",
+  "version": "1.0.0",
+  "main": "pathToMain",
+  "scripts": {
+    "s3-fw-images": "node s3-firmware-images.js"
+  },
+  "dependencies": {
+    "minimist": "1.2.8"
+  }
+}

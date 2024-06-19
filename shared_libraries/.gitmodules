@@ -1,0 +1,3 @@
+[submodule "yapi_service"]
+	path = yapi_service
+	url = git@github.com:GoalZero26503/yapi_service.git

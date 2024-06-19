@@ -1,0 +1,1 @@
+# GZ Hash C Library
