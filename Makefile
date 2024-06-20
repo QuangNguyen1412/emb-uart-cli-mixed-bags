@@ -12,7 +12,8 @@ export YAPI_SERVICE_DIR := ./shared_libraries/yapi_service
 TEST_SUITE :=	shared_lib_test
 
 UTILITIES_APPS := ota_host_app \
-									provision_app
+									provision_app \
+									socket_app
 
 EMB_APPS_DRIVERS := emb_apps_drivers
 
@@ -39,4 +40,5 @@ clean:
 	rm -f ota_host
 	rm -f provision
 	rm -f lib_test
+	rm -f socket
 	rm -r ./build
