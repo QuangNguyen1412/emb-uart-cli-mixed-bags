@@ -4,8 +4,10 @@
 #include <list>
 #include <string>
 #include "main.h"
+#include "containers.h"
 
 using namespace std;
+using namespace containers;
 
 class Town
 {
@@ -111,4 +113,15 @@ int main() {
   // test macro
   int i = TEMP + 1;
   cout << "i: " << i << endl;
+
+  // test containers
+  // hash_test
+  auto ht = new hash_test(); // constructor
+  ht->iterator_test();
+
+  // OddOccurencesInArray
+  int occurences = ht->findOddOccurencesInArray({9, 3, 9, 3, 9, 7, 9});
+  cout << ">> occurences test " << occurences << endl;
+  occurences = ht->findOddOccurencesInArray({9, 3, 9, 3, 9, 7, 9, 7, 7});
+  cout << ">> occurences test " << occurences << endl;
 }
