@@ -3,7 +3,7 @@
 
 export XX := g++
 export AR := ar
-export LDFLAGS := -std=c++11 -Wall
+export LDFLAGS := -std=c++17 -Wall
 export DEBUG_FLAGS := -g3 -O0
 export CFLAGS := -D PLATFORM_linux -D BUILD_Y6G_4000
 export GZ_SHARED_LIBS_DIR := ./shared_libraries
@@ -13,7 +13,8 @@ TEST_SUITE :=	shared_lib_test
 
 UTILITIES_APPS := ota_host_app \
 									provision_app \
-									socket_app
+									socket_app \
+									cpp_test_app
 
 EMB_APPS_DRIVERS := emb_apps_drivers
 
@@ -41,4 +42,5 @@ clean:
 	rm -f provision
 	rm -f lib_test
 	rm -f socket
+	rm -f cpp_test
 	rm -r ./build
